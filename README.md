@@ -19,6 +19,7 @@ Download the js file and include it in your html.
     <script type="text/javascript" src="CMRotate.js"></script>
 ```
 
+Add CMRotate.init function in your Javascript code.
 ```html
     var backgroundImages = ["images/img1.jpg", "images/img2.jpg", "images/img3.jpg"];
 
