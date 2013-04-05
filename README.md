@@ -22,7 +22,7 @@ Download the js file and include it in your html.
 ```
 
 Add CMRotate.init function in your Javascript code.
-```html
+```js
     /**
      * Background image Array for each Plane
      */
@@ -55,7 +55,7 @@ Add CMRotate.init function in your Javascript code.
 ### Dispose
 
 Remove all events and requestAnimationFrame
-```html
+```js
     CMRotate.dispose();
 ```
 
