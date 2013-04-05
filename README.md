@@ -11,17 +11,17 @@ Rotate js using CSS translate3d and transition
  * Works on tablet PC
  * MIT License
  
-#### Example ###
+### Example
 [http://work.cmiscm.com/cm-rotate.js/](http://work.cmiscm.com/cm-rotate.js/)
 
-## Usage ##
+### Usage
 
 Download the js file and include it in your html.
 ```html
     <script type="text/javascript" src="CMRotate.js"></script>
 ```
 
-### Init ###
+#### Init
 Add CMRotate.init function in your Javascript code.
 ```html
     /**
@@ -53,18 +53,18 @@ Add CMRotate.init function in your Javascript code.
 
 
 
-### Dispose ###
+#### Dispose
 
 Remove all events and requestAnimationFrame
 ```html
     CMRotate.dispose();
 ```
 
-## Questions ##
+### Questions
 If you have any questions, please feel free to ask on [my blog](http://blog.cmiscm.com/?p=3303)
 
 
-## License ##
+### License
 Copyright (c) 2013 Jongmin Kim (http://cmiscm.com) 
 
 Licensed under the MIT license.
