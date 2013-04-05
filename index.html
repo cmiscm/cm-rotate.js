@@ -32,6 +32,29 @@
             height:100%;
         }
 
+        #info-div {
+            width: 300px;
+            height: 50px;
+            position: absolute;
+            z-index: 12;
+            left: 50%;
+            top: 10px;
+            margin-left: -150px;
+            font-family: Helvetica, sans-serif;
+            font-size: 12px;
+            color: #333;
+            text-align: center;
+            line-height: 20px;
+        }
+
+        a {
+            color: #ff0000;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #000;
+        }
+
         .chand {
             cursor: url(images/hand.cur), move;
         }
@@ -44,6 +67,10 @@
 </head>
 
 <body>
+    <div id="info-div">
+        <a href="http://blog.cmiscm.com/?p=3303">cm-rotate.js</a> -
+        <a href="https://github.com/cmiscm/cm-rotate.js">fork me on github</a>
+    </div>
 
     <div id="rotate-div" class="chand"></div>
 
