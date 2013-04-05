@@ -143,7 +143,7 @@ var CMRotate = CMRotate || ( function () {
                 }
 
                 prev = _posArr[getInsideMax(no + prev_v, _posTotal)];
-                id = getInsideMax(prev.id - id_v, _bgTotal);
+                id = getInsideMax(prev.id + id_v, _bgTotal);
 
                 pos.id = id;
                 pos.item = getItem(no, id);
