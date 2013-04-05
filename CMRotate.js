@@ -1,7 +1,7 @@
 /**
- * @project-site    http://blog.cmiscm.com
- * @repository		ttp://github.com/aFarkas/Ajaxmanager
- * @author		    Jongmin Kim - cmiscm@gmail.com
+ * @project-site    http://blog.cmiscm.com/?p=3303
+ * @repository		https://github.com/cmiscm/cm-rotate.js
+ * @author		    Jongmin Kim - cmiscm.com
  * @version 	    1.0
  * @license		    MIT License
  */
@@ -13,7 +13,7 @@ var CMRotate = CMRotate || ( function () {
         PI = Math.PI / 180, _radius, _gap, _ty, _posTotal,
         _itemW, _itemH, _itemHW, _itemHH, _itemCur = 0,
         _posArr = [], _itemArr = [], _bgArr, _bgTotal,
-        _centerX, _centerY, _isDispose = false,
+        _centerX, _centerY, _isDispose = false, _fn,
         _isDrag = false, _oldMouseX , _offsetX, _moveX = 0;
 
     /**
@@ -26,8 +26,9 @@ var CMRotate = CMRotate || ( function () {
      * gap - Gap between each Plane
      * radius - Circle Radius
      * bg - Background image Array
+     * fn - Mouse click function on each Plane
      */
-    function init(div, tw, th, ty, gap, radius, bg) {
+    function init(div, tw, th, ty, gap, radius, bg, fn) {
 
         $contaier = document.getElementById(div);
         _cssTransform = getCSSTransform();
@@ -37,6 +38,7 @@ var CMRotate = CMRotate || ( function () {
         }
         _isTrans3D = has3d();
 
+        _fn = fn;
         _bgArr = bg;
         _bgTotal = _bgArr.length;
         _itemW = tw;
@@ -97,7 +99,7 @@ var CMRotate = CMRotate || ( function () {
     function onClick(event) {
         var no = Number((event.currentTarget.id).substr(10, 3)),
             id = _itemArr[no].id;
-        alert('click no - ' + (id + 1));
+        _fn(id);
     }
 
 

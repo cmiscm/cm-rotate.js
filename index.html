@@ -55,8 +55,11 @@
                                     "images/img11.jpg", "images/img12.jpg", "images/img13.jpg", "images/img14.jpg", "images/img15.jpg",
                                     "images/img16.jpg", "images/img17.jpg", "images/img18.jpg"];
 
-            CMRotate.init('rotate-div', 200, 300, 100, 12, 600, backgroundImages);
+            CMRotate.init('rotate-div', 200, 300, 100, 12, 600, backgroundImages, clickFn);
 
+            function clickFn(no) {
+                alert('click no - ' + (no + 1));
+            }
         }
     </script>
 </body>
