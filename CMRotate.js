@@ -121,8 +121,7 @@ var CMRotate = CMRotate || ( function () {
     }
 
     function render(pos, sita, no) {
-        sita = sita % 360;
-        if (sita < 0) sita = sita + 360;
+        sita = (sita + 360) % 360;
         pos.pos = sita;
 
         if (sita > 10 && sita < 170) {
@@ -165,8 +164,7 @@ var CMRotate = CMRotate || ( function () {
 
         movePlane(item.plane, imgPos.x, imgPos.y, sita + 90);
 
-        if (item.click == 1) item.plane.style.zIndex = 900;
-        else item.plane.style.zIndex = zindex;
+        item.plane.style.zIndex = zindex;
     }
 
     function circlePos(sita) {
@@ -283,7 +281,7 @@ var CMRotate = CMRotate || ( function () {
         div.style.width = _itemW + 'px';
         div.style.height = _itemH + 'px';
         div.style.position = 'absolute';
-        div.style.background = 'url(' + _bgArr[id] + ') no-repeat';
+        div.style.background = 'url(' + _bgArr[id] + ')';
         movePlane(div, -5000, -5000, 0);
         $contaier.appendChild(div);
         plane = {plane:div, use:1, no:no, id:id};
