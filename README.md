@@ -13,7 +13,7 @@ Rotate js using CSS translate3d and transition
  * MIT License
  
 ### Example
-[http://work.cmiscm.com/cm-rotate.js/](http://work.cmiscm.com/cm-rotate.js/)
+[http://cmiscm.github.com/cm-rotate.js/](http://cmiscm.github.com/cm-rotate.js/)
 
 ### Usage
 
