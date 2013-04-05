@@ -6,7 +6,7 @@ Rotate js using CSS translate3d and transition
  * No dependencies
  * Works in Chrome, Safari, Firefox, Opera and IE9, IE10
  * MIT License
- * 
+ 
 [Examples](http://work.cmiscm.com/cm-rotate.js/)
 
 
