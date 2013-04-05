@@ -11,7 +11,7 @@ Rotate js using CSS translate3d and transition
  * Works on tablet PC
  * MIT License
  
-### Example ###
+#### Example ###
 [http://work.cmiscm.com/cm-rotate.js/](http://work.cmiscm.com/cm-rotate.js/)
 
 ## Usage ##
