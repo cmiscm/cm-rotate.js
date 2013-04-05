@@ -59,6 +59,8 @@ Remove all events and requestAnimationFrame
     CMRotate.dispose();
 ```
 
+### Questions ###
+If you have any questions, please feel free to ask on [my blog](http://blog.cmiscm.com/?p=3303)
 
 
 ### License ###
