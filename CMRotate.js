@@ -31,6 +31,7 @@ var CMRotate = CMRotate || ( function () {
     function init(div, tw, th, ty, gap, radius, bg, fn) {
 
         $contaier = document.getElementById(div);
+
         _cssTransform = getCSSTransform();
         if (!_cssTransform) {
             alert("Your browser does not seem to support CSS Transform.");
@@ -50,12 +51,12 @@ var CMRotate = CMRotate || ( function () {
         _radius = radius;
         _posTotal = Math.ceil(360 / _gap);
 
-        var i, id, pos, reverse = 0;
+        var i, id, pos, reverse = 0, h_total = _posTotal >> 1;
         for (i = 0; i < _posTotal; i++) {
             pos = ((i * _gap - 90) + 360) % 360;
             _posArr[i] = {pos:pos, item:null, id:i};
         }
-        for (i = _posTotal; i > _posTotal >> 1; i--) {
+        for (i = _posTotal; i > h_total; i--) {
             pos = ((i * _gap - 90) + 360) % 360;
             if (pos > 90 && pos < 270) {
                 id = (_bgTotal - 1) - reverse;
@@ -131,19 +132,23 @@ var CMRotate = CMRotate || ( function () {
             }
         } else {
             if (pos.item == null) {
+                var id, prev, prev_v, id_v;
 
-                var id, prev;
                 if (sita > 170 && sita < 270) {
-                    prev = _posArr[getInsideMax(no + 1, _posTotal)];
-                    id = getInsideMax(prev.id - 1, _bgTotal);
+                    prev_v = 1;
+                    id_v = -1;
                 } else {
-                    prev = _posArr[getInsideMax(no - 1, _posTotal)];
-                    id = getInsideMax(prev.id + 1, _bgTotal);
+                    prev_v = -1;
+                    id_v = 1;
                 }
+
+                prev = _posArr[getInsideMax(no + prev_v, _posTotal)];
+                id = getInsideMax(prev.id - id_v, _bgTotal);
 
                 pos.id = id;
                 pos.item = getItem(no, id);
             }
+            
             setPos(pos.item, sita);
         }
     }
