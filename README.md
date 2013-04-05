@@ -21,7 +21,6 @@ Download the js file and include it in your html.
     <script type="text/javascript" src="CMRotate.js"></script>
 ```
 
-#### Init
 Add CMRotate.init function in your Javascript code.
 ```html
     /**
@@ -53,7 +52,7 @@ Add CMRotate.init function in your Javascript code.
 
 
 
-#### Dispose
+### Dispose
 
 Remove all events and requestAnimationFrame
 ```html
