@@ -59,7 +59,7 @@ Remove all events and requestAnimationFrame
 
 
 
-## License ###
+### License ###
 Copyright (c) 2013 Jongmin Kim (http://cmiscm.com) 
 
 Licensed under the MIT license.
