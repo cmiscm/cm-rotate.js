@@ -38,6 +38,3 @@ Copyright (c) 2013 Jongmin Kim (http://cmiscm.com)
 Licensed under the MIT license.
 
  - http://www.opensource.org/licenses/mit-license.php
-
-Older releases can be found on [google code][older]
-[older]: http://code.google.com/p/jstree/downloads/list
