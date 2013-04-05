@@ -28,6 +28,7 @@ Add CMRotate.init function in your Javascript code.
  - radius - Circle Radius
  - bg - Background image Array
  - fn - Mouse click function on each Plane
+
 ```html
     var backgroundImages = ["images/img1.jpg", "images/img2.jpg", "images/img3.jpg", ...];
 
