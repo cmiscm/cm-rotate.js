@@ -20,20 +20,29 @@ Download the js file and include it in your html.
 ```
 
 Add CMRotate.init function in your Javascript code.
- - div - DIV element ID
- - tw - Plane Width
- - th - Plane Height
- - ty - Y position distance from bottom
- - gap - Gap between each Plane
- - radius - Circle Radius
- - bg - Background image Array
- - fn - Mouse click function on each Plane
-
 ```html
+    /**
+     * Background image Array for each Plane
+     */
     var backgroundImages = ["images/img1.jpg", "images/img2.jpg", "images/img3.jpg", ...];
 
+    /**
+     * init
+     *
+     * div - DIV element ID
+     * tw - Plane Width
+     * th - Plane Height
+     * ty - Y position distance from bottom
+     * gap - Gap between each Plane
+     * radius - Circle Radius
+     * bg - Background image Array
+     * fn - Mouse click function on each Plane
+     */
     CMRotate.init('rotate-div', 200, 300, 100, 12, 600, backgroundImages, clickFn);
 
+    /**
+     * Click function
+     */
     function clickFn(no) {
         alert('click no - ' + (no + 1));
     }
