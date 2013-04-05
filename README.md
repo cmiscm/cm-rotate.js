@@ -2,7 +2,8 @@ cm-rotate.js
 ============
 
 
-![Screenshot](https://raw.github.com/cmiscm/images/master/cmrotate-img.jpg)
+[![alt text](http://cmiscm.github.com/cm-rotate.js/screenshot/cmrotate-img.jpg)](http://cmiscm.github.com/cm-rotate.js/)
+
 
 Rotate js using CSS translate3d and transition
 
