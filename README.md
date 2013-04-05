@@ -7,16 +7,15 @@ Rotate js using CSS translate3d and transition
 
 
 
-Usage
-=======
-
+### Usage ###
+```html
     var backgroundImages = ["images/img1.jpg", "images/img2.jpg", "images/img3.jpg"];
 
     CMRotate.init('rotate-div', 200, 300, 100, 12, 600, backgroundImages);
+```
 
-Click Event
-==============
-
+### Click Event ###
+```html
     /**
      * click event on each Plane
      */
@@ -25,4 +24,4 @@ Click Event
             id = _itemArr[no].id;
         alert('click no - ' + (id + 1));
     }
-
+```
