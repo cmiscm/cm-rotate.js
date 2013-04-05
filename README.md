@@ -50,6 +50,15 @@ Add CMRotate.init function in your Javascript code.
 
 
 
+### Dispose ###
+
+Remove all events and requestAnimationFrame
+```html
+    CMRotate.dispose();
+```
+
+
+
 ## License ###
 Copyright (c) 2013 Jongmin Kim (http://cmiscm.com) 
 
