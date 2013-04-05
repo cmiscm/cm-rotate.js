@@ -21,20 +21,23 @@ Download the js file and include it in your html.
 
 Add CMRotate.init function in your Javascript code.
 ```html
-    var backgroundImages = ["images/img1.jpg", "images/img2.jpg", "images/img3.jpg"];
+    var backgroundImages = ["images/img1.jpg", "images/img2.jpg", "images/img3.jpg", ...];
 
-    CMRotate.init('rotate-div', 200, 300, 100, 12, 600, backgroundImages);
-```
+    CMRotate.init('rotate-div', 200, 300, 100, 12, 600, backgroundImages, clickFn);
 
-
-### Click Event ###
-```html
-    /**
-     * click event on each Plane
-     */
-    function onClick(event) {
-        var no = Number((event.currentTarget.id).substr(10, 3)),
-            id = _itemArr[no].id;
-        alert('click no - ' + (id + 1));
+    function clickFn(no) {
+        alert('click no - ' + (no + 1));
     }
 ```
+
+
+
+## License ###
+Copyright (c) 2013 Jongmin Kim (http://cmiscm.com) 
+
+Licensed under the MIT license.
+
+ - http://www.opensource.org/licenses/mit-license.php
+
+Older releases can be found on [google code][older]
+[older]: http://code.google.com/p/jstree/downloads/list
